@@ -1,0 +1,914 @@
+body {
+    font-family: "Arial, Helvetica", sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 1519px;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  
+  #home-text {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0 30% 0 5%;
+  }
+  
+  #home-text:hover {
+    font-size: 2em;
+    font-weight: bold;
+    color: #F53A4B;
+    padding: 10px 10px;
+    margin: 0 30% 0 5%;
+    transition: linear 0.3s;
+  }
+  
+  #main-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  #main-bar li {
+    margin: 0 2em;
+    color: #8A8180;
+  }
+  
+  #main-bar li:hover {
+    color: white;
+  }
+  
+  #mobile-side-bar {
+    display: none;
+  }
+  
+  /* Search button */
+  
+  #search-box input {
+    width: 100%;
+    width: 80px;
+    height: 20px;
+    margin: 0;
+    padding: 0 10px 0 40px;
+    border-bottom: none;
+    font-size: 16px;
+    background: url(assets/images/search.png) no-repeat 12px 18px black;
+    background-size: 15px 15px;
+    background-position: left;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  
+  #desktop-screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    background-color: #F73A4C;
+  }
+  
+  #desktop-screen ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #desktop-screen ul li {
+    margin: 0 1.5em 0 1.5em;
+    color: white;
+    padding: 1em 0;
+    text-transform: uppercase;
+  }
+  
+  #desktop-screen ul li:hover {
+    color: black;
+  }
+  
+  #mobile-nav {
+    display: none;
+    text-align: center;
+  }
+  
+  #main-movie {
+    position: relative;
+    background-image: url(assets/images/lord-of-the-rings.png);
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #main-movie h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 20%;
+  }
+  
+  #heading-text-main-movie {
+    text-shadow: 4px 6px 13px rgba(255, 255, 255, 0.82);
+  }
+  
+  #main-movie p {
+    margin: 2em 0 1em 0;
+    font-size: 0.90em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #heading-main-movie {
+    text-shadow: 4px 6px 13px rgba(255, 255, 255, 0.82);
+  }
+  
+  #mobile-movie {
+    display: none;
+  }
+  
+  #about-movie {
+    display: inline-block;
+    margin: 1% auto 15% auto;
+  }
+  
+  .about {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1.5em;
+    margin: 0 30px 0 30px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .about:hover {
+    background: #F73A4C;
+    color: white;
+    border: 2px solid #F73A4C;
+    border-radius: 30px;
+    padding: 1.5em;
+    margin: 0 30px 0 30px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  /* Small pictures */
+  
+  #main-image-footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #main-image-footer ul {
+    display: flex;
+    margin: 0% 20px;
+    z-index: 2;
+    position: absolute;
+    bottom: -18%;
+  }
+  
+  #main-image-footer .img-footer {
+    max-width: 100%;
+    margin: 0px;
+  }
+  
+  #main-image-footer img:hover {
+    margin-top: -50px;
+  }
+  
+  #main-image-footer img {
+    width: 400px;
+    padding: 10px;
+  }
+  
+  /* Favorite movies */
+  
+  #favorite-part {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1519px;
+    background-image: url(assets/images/background-black.jpg);
+    overflow: auto;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  #favorite p {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0 5em 3em 5em;
+    color: #e4e4e4;
+  }
+  
+  #favorite h1, #more-movies h1, #popular h1, #mail h1, #testimonials h1, #mail-us h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.2em 0;
+    color: white;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.72);
+  }
+  
+  #genre {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #genre div {
+    width: 140px;
+    color: white;
+    margin: 0 5%;
+  }
+  
+  [type=radio] {
+    margin: 0.5em;
+  }
+  
+  #search {
+    display: flex;
+    justify-content: center;
+    margin: 2.5%;
+  }
+  
+  /* More Movies */
+  
+  #more-movies {
+    margin-top: 36%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  #more-movies h2 {
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  
+  #more-movies h2:hover {
+    color: #F5394B;
+  }
+  
+  #more-movies>div {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  
+  #covers-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  #covers-container .cover {
+    margin: 1% 1%;
+    transition: transform 0.7s;
+  }
+  
+  #covers-container .cover img {
+    width: 220px;
+    height: 280px;
+  }
+  
+  #covers-container .cover:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Popular */
+  
+  #popular {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  #popular h2 {
+    padding: 0.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  #popular>div {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #popular-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  
+  #popular-container .popular {
+    margin: 0.5em 0.5em;
+    transition: transform 0.7s;
+  }
+  
+  #popular-container .popular img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 8px;
+  }
+  
+  #popular-container .popular h2:hover {
+    font-size: 12px;
+    color: red;
+  }
+  
+  #popular-container .popular:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Testimonials */
+  
+  #testimonials {
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(assets/images/background-pink.jpg);
+    color: white;
+    text-align: center;
+  }
+  
+  #testimonials img {
+    margin: 0 10%;
+    width: 220px;
+    height: 220px;
+  }
+  
+  #testimonials h1 {
+    padding: 40px 0;
+  }
+  
+  #testimonials h2 {
+    padding: 12px 0 7px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.96);
+    font-weight: bold;
+  }
+  
+  #testimonials p {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #817a7a;
+    font-weight: bold;
+  }
+  
+  #testimonials h3 {
+    font-size: 18;
+    padding: 40px 20px 60px 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.96);
+  }
+  
+  #testimonials-container {
+    width: 291px;
+    margin: 0 auto;
+  }
+  
+  #testimonials-container>div {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  /* Mail */
+  
+  #mail-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1500px;
+    background: transparent;
+    border-radius: 8px;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    position: relative
+  }
+  
+  .contact-container {
+    display: flex;
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .form div label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #name-mail-div {
+    display: flex;
+  }
+  
+  .mail-input {
+    width: 550px;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .message-input {
+    width: 1250px;
+  }
+  
+  .mail-input:focus {
+    border-bottom: 2px solid red;
+    transition: all 0.5s;
+  }
+  
+  /* Map */
+  
+  #map {
+    width: 100%;
+  }
+  
+  /* Footer */
+  
+  #footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+  }
+  
+  #privacy-policy {
+    padding: 3% 7%;
+  }
+  
+  #questions {
+    padding: 3% 10% 3% 10%;
+    font-size: 18px;
+  }
+  
+  #logos {
+    padding: 3% 5% 3% 10%;
+  }
+  
+  #footer img {
+    width: 15px;
+    margin: 0 5px;
+  }
+  
+  /* Responsive design */
+  
+  @media all and (max-width: 1500px) {
+    #container {
+      width: 100%;
+    }
+  }
+  
+  @media all and (max-width: 1250px) {
+  
+    #main-bar li {
+      margin: 0 1em;
+      color: #8A8180;
+      font-size: 0.9em;
+    }
+      
+    #favorite-part {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    #favorite {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      background-image: url(assets/images/background-black.jpg);
+      overflow: auto;
+      position: absolute;
+      z-index: 3;
+    }
+  
+    .mail-input {
+      width: 250px;
+      font-size: 0.7em;
+    }
+    
+    .message-input {
+      font-size: 0.7em;
+      width: 300px;
+    }
+  }
+  
+  @media all and (max-width: 1000px) {
+    #desktop-screen {
+      display: none;
+    }
+    #desktop-screen ul li {
+      display: none;
+    }
+  
+    #home-text {
+      display: flex;
+      margin-left: 90px;
+  
+    }
+  
+    #home-text:hover {
+      display: flex;
+      margin-left: 90px;
+  
+    }
+  
+    #mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      color: white;
+      font-size: small;
+      background-color: #F53A4B;
+      margin-top: -3px;
+    }
+  
+    #mobile-nav ul li {
+      padding: 0.5em;
+      font-weight: bold;
+    }
+  
+    #mobile-nav ul li:hover {
+      color: black;
+    }
+  
+    #main-movie {
+      display: none;
+    }
+  
+    #mobile-movie {
+      display: flex;
+      flex-direction: column;
+      background-image: url("assets/images/lord-of-the-rings-mobile.png");
+      background-size: 100% 100%;
+      width: 100%;
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+    }
+  
+    #mobile-movie h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-top: 20%;
+    }
+  
+    #mobile-movie p {
+      margin-top: 2em;
+    }
+  
+    #about-movie-mobile {
+      padding: 2em 3em;
+      margin-top: 1em;
+    }
+  
+    #main-image-footer {
+      display: none;
+    }
+  
+    #genre div {
+      width: 150px;
+    }
+    
+    #mobile-side-bar {
+      display: flex;
+      flex-direction: column;
+      background-color: #202A37;
+      position: absolute;
+      
+      width: 80px;
+      height: 205px;
+    }
+  
+    #mobile-side-bar li {
+      padding: 7px;
+      color: rgb(124, 124, 124);
+    }
+  
+    #mobile-side-bar li:hover {
+      color: white;
+    }
+  
+    #main-bar {
+      display: none;
+    }
+  
+    #favorite {
+      width: 100%;
+      background-image: url(assets/images/background-black.jpg);
+      overflow: auto;
+      position: absolute;
+      z-index: 3;
+      font-size: 0.6em;
+    }
+    
+    #genre div {
+      width: 40px;
+      color: white;
+      margin: 0 5%;
+    }
+    
+    [type=radio] {
+      margin: 0.2em;
+    }
+    
+  
+    #more-movies {
+      margin-top: 440px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 0.8em;
+    }
+    
+    #more-movies>div {
+      width: 600px;
+    }
+    
+    #covers-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    
+    #covers-container .cover img {
+      width: 150px;
+      height: 180px;
+    }
+    
+    #popular {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    
+    #popular>div {
+      width: 600px;
+      margin: 0 auto;
+    }
+    
+    #popular-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 3em;
+    }  
+  
+  
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      margin: 20px;
+    }
+    
+    #name-mail-div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .mail-input {
+      width: 170px;
+      font-size: 0.7em;
+    }
+    
+    .message-input {
+      font-size: 0.7em;
+      width: 240px;
+    }
+  
+    .contact-container label {
+      font-size: 0.7em;
+    }
+  } 
+  
+  @media all and (max-width: 400px) {
+    #desktop-screen {
+      display: none;
+    }
+    #desktop-screen ul li {
+      display: none;
+    }
+  
+    #home-text {
+      display: flex;
+      margin-left: 100px;
+    }
+  
+    #home-text:hover {
+      display: flex;
+      margin-left: 100px;
+    }
+  
+    #mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      color: white;
+      font-size: small;
+      background-color: #F53A4B;
+      margin-top: -3px;
+    }
+  
+    #mobile-nav ul li {
+      padding: 0.5em;
+      font-weight: bold;
+    }
+  
+    #mobile-nav ul li:hover {
+      color: black;
+    }
+  
+    #main-movie {
+      display: none;
+    }
+  
+    #mobile-movie {
+      display: flex;
+      flex-direction: column;
+      background-image: url(assets/images/lord-of-the-rings-mobile.png);
+      background-size: 100% 100%;
+      width: 100%;
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+    }
+  
+    #mobile-movie h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-top: 20%;
+    }
+  
+    #mobile-movie p {
+      margin-top: 2em;
+    }
+  
+    #about-movie-mobile {
+      padding: 2em 3em;
+      margin-top: 1em;
+    }
+  
+    #main-image-footer {
+      display: none;
+    }
+  
+    #genre div {
+      width: 150px;
+    }
+    
+    #mobile-side-bar {
+      display: flex;
+      flex-direction: column;
+      background-color: #202A37;
+      position: absolute;
+      
+      width: 80px;
+      height: 205px;
+    }
+  
+    #mobile-side-bar li {
+      padding: 8px;
+      color: rgb(124, 124, 124);
+    }
+  
+    #mobile-side-bar li:hover {
+      color: white;
+    }
+  
+    #main-bar {
+      display: none;
+    }
+  
+    #favorite {
+      width: 100%;
+      background-image: url("assets/images/background-black.jpg");
+      overflow: auto;
+      position: absolute;
+      z-index: 3;
+      font-size: 0.6em;
+    }
+    
+    #genre div {
+      width: 40px;
+      color: white;
+      margin: 0 5%;
+    }
+    
+    [type=radio] {
+      margin: 0.2em;
+    }
+    
+  
+    #more-movies {
+      margin-top: 500px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 0.8em;
+    }
+    
+    #more-movies>div {
+      width: 600px;
+    }
+    
+    #covers-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+    
+    #covers-container .cover img {
+      width: 150px;
+      height: 180px;
+    }
+    
+    #popular {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    
+    #popular>div {
+      width: 600px;
+      margin: 0 auto;
+    }
+    
+    #popular-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 50%;
+      margin-bottom: 3em;
+    }  
+  
+    .contact-container {
+      display: flex;
+      padding: 15px;
+      margin: 20px;
+    }
+    
+    #name-mail-div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .mail-input {
+      width: 170px;
+      font-size: 0.7em;
+    }
+    
+    .message-input {
+      font-size: 0.7em;
+      width: 240px;
+    }
+  
+    .contact-container label {
+      font-size: 0.7em;
+    }
+  }
